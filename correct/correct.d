@@ -1,0 +1,1 @@
+correct.o: correct.cpp
