@@ -1,1 +1,3 @@
-# Imperial-C-Revision
+# Imperial C++ Revision
+
+Contains solutions for the C++ exercises at Imperial.
