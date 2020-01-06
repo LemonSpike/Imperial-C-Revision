@@ -53,7 +53,7 @@ int main() {
 
   cout << "====================== Question 3 ======================" << endl << endl;
 
-  /* an easy example with a known solution */
+  // an easy example with a known solution
   cout << "A path through the maze from '>' to 'X' is: " << endl;
   cout << find_path(maze, height, width, '>', 'X') << endl << endl;
 
@@ -63,7 +63,7 @@ int main() {
 
   deallocate_2D_array(maze, height);
 
-  /* an impossible example - should return "no solution" */ 
+  // an impossible example - should return "no solution"
   maze = load_maze("simple.txt", height, width);
   assert(maze);
 
@@ -71,10 +71,10 @@ int main() {
   cout << find_path(maze, height, width, '>', 'U') << endl << endl;
 
   deallocate_2D_array(maze, height);
-  
+  /*
   cout << "=================== Bonus Question =====================" << endl << endl;
 
-  /* find the path from the entrance to the middle of the Hatfield House maze */
+  // find the path from the entrance to the middle of the Hatfield House maze 
   maze = load_maze("hatfield.txt", height, width);
   assert(maze);
 
@@ -91,7 +91,7 @@ int main() {
 
   deallocate_2D_array(maze, height);
 
-  /* find the path from the middle to the exit of the Hatfield House maze */
+  // find the path from the middle to the exit of the Hatfield House maze 
   maze = load_maze("hatfield.txt", height, width);
   assert(maze);
 
@@ -105,6 +105,6 @@ int main() {
   deallocate_2D_array(maze, height);
 
   cout << "======================= The End ========================" << endl << endl;
-
+  */
   return 0;
 }

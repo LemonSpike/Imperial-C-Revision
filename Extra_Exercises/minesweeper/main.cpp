@@ -63,7 +63,7 @@ int main() {
   if (!is_complete(mines, revealed))
     cout << "NOT ";
   cout << "complete." << endl;
-  
+
   cout << "====================== Question 2 ======================" << endl << endl;
 
   load_board("mines.dat", mines);
@@ -80,31 +80,31 @@ int main() {
   initialise_board(revealed);
   display_board(revealed);
   
-  /* valid move */
+  // valid move
   cout << "Making move 'B6' results in:" << endl;
   MoveResult result = make_move("B6", mines, revealed);
   print_move_result(result, revealed);
 
-  /* valid move */
+  // valid move
   cout << "Making move 'E5' results in:" << endl;
   result = make_move("E5", mines, revealed);
   print_move_result(result, revealed);
   
-  /* valid move */
+  // valid move
   cout << "Making move 'H3*' results in:" << endl;
   result = make_move("H3*", mines, revealed);
   print_move_result(result, revealed);
 
-  /* invalid move */
+  // invalid move
   cout << "Making move 'Z8' results in:" << endl;
   result = make_move("Z8", mines, revealed);
   print_move_result(result, revealed);
 
-  /* blown up */
+  // blown up
   cout << "Making move 'A5' results in:" << endl;
   result = make_move("A5", mines, revealed);
   print_move_result(result, revealed);
-
+  /*
   cout << "====================== Question 4 ======================" << endl << endl;
 
   load_board("mines.dat", mines);
@@ -118,7 +118,7 @@ int main() {
     make_move(move, mines, revealed);
   }
   cout << endl;
-
+  */
   /*  
   cout << "=================== Bonus Question =====================" << endl << endl;
 
